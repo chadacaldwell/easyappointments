@@ -11,6 +11,7 @@ services:
         ports:
             - "8001:3306"
     server:
+        user: "1000:1000"
         build: ./server
         image: easyappointments-server:v1
         container_name: easyappointments-server
